@@ -110,6 +110,15 @@ export default function Home() {
               }}
             />
           </Stack>
+          <Button
+            variant="contained"
+            onClick={async () => {
+              await addItem(itemName);
+              handleClose();
+            }}
+          >
+            Add
+          </Button>
         </Box>
       </Modal>
       <Button
